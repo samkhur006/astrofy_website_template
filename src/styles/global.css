@@ -1,3 +1,39 @@
-.time-line-container>div:last-child .education__time>.education__line {
-    display: none;
+
+/* Body styles */
+body {
+    background-color: #97b6d4; /* Light blue-gray background */
+    color: #1a202c; /* Dark text color */
+    font-family: 'Arial', sans-serif;
+    max-width: 19900px; /* Adjust as needed */
+
+  }
+
+  /* Container styles */
+  .container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Button styles */
+  .btn {
+    background-color: #4e54c8; /* Blue button color */
+    color: #fff; /* White text color */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    /* border: 2px solid #2c502f; */
+  }
+
+  .btn:hover {
+    background-color: #5662be; /* Darker blue on hover */
+  }
+
+  .thin-dark {
+    background-color: #000552; /* Adjust the color as needed */
+    height: 1px; /* Set the desired height for a thin divider */
+    width: 15%; /* Ensure the divider spans the full width of its container */
+    margin-left: auto;
 }

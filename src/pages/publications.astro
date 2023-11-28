@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Publications" sideBarActiveItemID="publications">
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-5">Research Projects</div>
+  </div> -->
+
+
+
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Publications</div>
+  </div> -->
+
+
+  <HorizontalCard
+  title="Online Algorithms for Geometric Dominating Set"
+  img="/online.webp"
+  desc={[
+    "Devised linear time online algorithms to find dominating set on various data streams using greedy approach",
+    "Presenting this paper in COCOA conference in Hawaii on Dec 15, 2023."
+  ]}
+  affiliation="Bachelors' Thesis under guidance of Dr. Minati De, IIT Delhi"
+  url="https://arxiv.org/abs/2111.07812"
+  reportLink="https://arxiv.org/abs/2111.07812"
+  badge="COCOA Conference 2023, Hawaii"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Wireless Network Security"
+    img="/wir.webp"
+    desc={[
+      "Addressed the issue of transmitting delay sensitive messages in a power substation in the presence of abroadband jammer. ",
+      "Modelled the interaction between IEDs and Jammer as a repeated Bayesian zero sum game",
+      "Awarded with Summer Undergraduate Research Award (SURA) by IIT-Delhi for outstanding research contribution"
+    ]}
+    affiliation="Dr. Manav Bhatnagar, IIT-Delhi"
+    url="https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/iet-com.2019.0005"
+    reportLink="https://drive.google.com/file/d/1t1qyvN5-kbJH3x2SDrvH_H3FHNbWuGz6/view?usp=sharing"
+    presentationLink="https://docs.google.com/presentation/d/1jZabX_nAYLVq0uvM3tqh0v7w3IxIm26M/edit?usp=sharing&ouid=104746650794840317004&rtpof=true&sd=true"
+    badge="IET Communications journal, 2019"
+  />
+</BaseLayout>

@@ -4,25 +4,83 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
-  <div>
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
-  </div>
+  </div> -->
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Hybrid Software Architecture for AI Rescue robot"
+    img="/survivor_buddy.webp"
+    desc={[
+      "Designed a ROS architecture for Survivor Buddy, a pioneering collaboration of TAMU & Stanford University,",
+      "Leveraged observer design pattern to automate 5 human robot interactions, spanning 2K+ lines of code,",
+      "Devised multi-threaded algorithm for parallel image & audio processing, reducing latency by 95%(≈ 0.1sec)"
+    ]}
+    affiliation="Colaboration between Texas A&M University and Stanford University"
+    url="https://drive.google.com/file/d/1Jzj5wV4ibmyPMLVd_Aoihq273Q0uMRQw/view"
+    presentationLink="https://drive.google.com/file/d/1Jzj5wV4ibmyPMLVd_Aoihq273Q0uMRQw/view"
+    githubLink="https://github.com/samkhur006/AI-project"
+    demoLink="https://drive.google.com/file/d/13jWSqbST7M5CWQzv8waes_H-pOIxsZ2s/view"
+    websiteLink="https://survivorbuddy.org/"
     badge="NEW"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Improving Generalization of Deep AUC Maximization for Medical Image Classification"
+    img="/med.webp"
+    desc={[
+      "Improved the generalization ability of Deep AUC Maximization for medical image classification.",
+      "Performed ablation studies to investigate the impacts of augmentation, balancing imbalanced datasets, addressing distributional shift, and tuning hyperparameters."
+    ]}
+    affiliation="Dr. Tianbao Yang, Texas A&M University"
+    url="https://drive.google.com/file/d/1inGVcMgEil0sUDOzEtZylqxHiRmkI_DR/view?usp=sharing"
+    reportLink="https://drive.google.com/file/d/1inGVcMgEil0sUDOzEtZylqxHiRmkI_DR/view?usp=sharing"
+    githubLink="https://github.com/samkhur006/AUC_maximize_medical"
   />
 
+  <div class="divider my-0"></div>
+  <HorizontalCard
+  title="SkyTrace: Aerial Artistry Tool"
+  img="/skytrace.webp"
+  desc={[
+    "Implemented fingertip detection and locus tracking for crafting air-drawn sketches from video data",
+    "Used OpenCV’s Mediapipe for precise hand-tracking & developed complex multi-stroke air sketch algorithms",
+    "Pioneered a concept of a seamless scene delimiter, crucial for executing multiple strokes cohesively"
+  ]}
+  affiliation="Sketch Recognition Lab, Texas A&M University"
+  url="https://github.com/samkhur006/AirSketch/blob/master/hand.gif"
+  githubLink="https://github.com/samkhur006/AirSketch"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="PayFast: Online Wallet"
+    img="/payfast.webp"
+    desc={[
+      "Developed a Ruby-based online wallet application to streamline transactions within Texas A&M’s portal",
+      "Integrated multi-currency, detailed history, and seamless card management for enhanced user convenience",
+    ]}
+    affiliation="Designed an application for TAMU's internal payments portal"
+    url="https://twitter.com/payfastwallet"
+    githubLink="https://github.com/ChunkaiFu/wallet/tree/main"
+    demoLink="https://www.youtube.com/watch?v=RcYXTyiOQ-U"
+    twitterLink="https://twitter.com/payfastwallet"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="A voting approach to uncover multiple influential spreaders on weighted networks"
+    img="/Vote.webp"
+    desc={[
+      "Optimized WVoteRank algorithm for weighted graphs to identify influential nodes",
+      "Improved the scoring metric and loss function by additionally incorporating second neighbours",
+      "Presented findings to 100+ research scholars in a seminar conducted by Mathematics department at IIT-Delhi"
+    ]}
+    affiliation="Dr. B.S Panda, IIT-Delhi"
+    url="https://drive.google.com/file/d/1lUH8nX3ZKJZMtxmTTxDfyJFJj2jdcfWZ/view?usp=sharing"
+    presentationLink="https://drive.google.com/file/d/1lUH8nX3ZKJZMtxmTTxDfyJFJj2jdcfWZ/view?usp=sharing"
+  />
+
+<!--
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
   </div>
@@ -47,5 +105,5 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
-  />
+  /> -->
 </BaseLayout>
