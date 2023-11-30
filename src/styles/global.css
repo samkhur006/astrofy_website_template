@@ -28,7 +28,7 @@ body {
   }
 
   .btn:hover {
-    background-color: rgba(121, 121, 233, 0.975); /* Darker blue on hover */
+    background-color: rgba(233, 121, 136, 0.975); /* Darker blue on hover */
   }
 
   .thin-dark {
