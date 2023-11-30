@@ -17,7 +17,7 @@ body {
 
   /* Button styles */
   .btn {
-    background-color: #4e54c8; /* Blue button color */
+    background-color: #5b99da; /* Blue button color */
     color: #fff; /* White text color */
     padding: 10px 15px;
     text-decoration: none;
@@ -28,7 +28,7 @@ body {
   }
 
   .btn:hover {
-    background-color: #5662be; /* Darker blue on hover */
+    background-color: rgba(121, 121, 233, 0.975); /* Darker blue on hover */
   }
 
   .thin-dark {
