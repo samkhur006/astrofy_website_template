@@ -6,6 +6,6 @@ import tailwindConfig from './tailwind.config.cjs'; // Adjust the path according
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
+  site: 'https://samkhur006.github.io',
   integrations: [mdx(), sitemap(), tailwind({ config: tailwindConfig })]
 });
