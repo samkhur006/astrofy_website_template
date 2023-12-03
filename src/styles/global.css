@@ -33,7 +33,7 @@ body {
 
   .thin-dark {
     background-color: #000552; /* Adjust the color as needed */
-    height: 1px; /* Set the desired height for a thin divider */
+    height: 22px; /* Set the desired height for a thin divider */
     width: 15%; /* Ensure the divider spans the full width of its container */
     margin-left: auto;
 }
