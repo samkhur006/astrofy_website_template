@@ -7,14 +7,29 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <!-- <div>
     <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
   </div> -->
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Continual Optimistic Initialization for Value-Based Reinforcement Learning (COIN)"
+    img="/rl.webp"
+    desc={[
+      "Designed COIN exploration strategy overcoming optimistic initialization limitations in non-stationary environments.",
+      "Showcased higher average returns over existing strategies across five out of 6 benchmark domains in OpenAI Gym, illustrating the superiority of COIN strategy.",
+      "Conducted ablation studies to analyze individual hyperparameters."
+    ]}
+    affiliation="Project currently under paper construction phase. Links and updates will be added in the coming months"
+    url="https://people.engr.tamu.edu/guni/pistar/research.html"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
 
   <HorizontalCard
     title="Hybrid Software Architecture for AI Rescue robot"
     img="/survivor_buddy.webp"
     desc={[
-      "Designed a ROS architecture for Survivor Buddy, a pioneering collaboration of TAMU & Stanford University,",
-      "Leveraged observer design pattern to automate 5 human robot interactions, spanning 2K+ lines of code,",
-      "Devised multi-threaded algorithm for parallel image & audio processing, reducing latency by 95%(≈ 0.1sec)"
+      "Designed a ROS architecture for Survivor Buddy, a pioneering collaboration of TAMU & Stanford University.",
+      "Leveraged observer design pattern to automate 5 human robot interactions, spanning 2K+ lines of code.",
+      "Devised multi-threaded algorithm for parallel image & audio processing, reducing latency by 95%(≈ 0.1sec)."
     ]}
     affiliation="Colaboration between Texas A&M University and Stanford University"
     url="https://drive.google.com/file/d/1Jzj5wV4ibmyPMLVd_Aoihq273Q0uMRQw/view"
