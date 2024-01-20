@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import sem1Thumbnail from "../../public/sem1.jpg";
+import sem2Thumbnail from "../../public/sem2.jpg";
 const researchTalks = [
   {
     title: "Emergent Abilities of Large Language Models",
@@ -13,7 +14,7 @@ const researchTalks = [
     title: "TALK LIKE A GRAPH: Encoding Graphs for Large Language Models",
     description: "How to make LLMs understand Graph datasets? Study the effect of Graph encoding and structure on LLM Performance",
     link: "https://docs.google.com/presentation/d/1nLqlIvd5UT3NswzWNxM-qP4QhpMEiTD1/edit?usp=sharing&ouid=116526815855181018172&rtpof=true&sd=true",
-    thumbnail: "https://geyuyao.com/post/talk-like-a-graph-encoding-graphs-for-large-language-models/1697950797666_hu6325ec6162427af0e7c21f48cf7c2ac8_125251_1200x1200_fit_q99_h2_lanczos_3.webp", // Replace with your actual thumbnail image
+    thumbnail: sem2Thumbnail, // Replace with your actual thumbnail image
   },
   {
     title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
@@ -38,6 +39,12 @@ const blogPosts = [
     description: "Why does a trained GNN model predict a certain class label and how to make it predict a desired class label? GNNExplainer is a groundbreaking approach providing interpretable explanations for any GNN-based model.",
     link: "https://medium.com/@sambhav.khurana006/explainability-in-graph-neural-networks-with-gnnexplainer-6287ec82dc28",
     thumbnail: "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*8-HY-YC5iHSZ_IRi", // Replace with your actual thumbnail image
+  },
+  {
+    title: "One For ALL : One Graph Model For All Classification Tasks",
+    description: "Developing a unified model for diverse tasks in artificial intelligence was historically challenging for graph datasets. One For All (OFA) is a recent groundbreaking framework that employs a single graph model, showcasing robust performance across various tasks and domains.",
+    link: "https://medium.com/@sambhav.khurana006/one-for-all-one-graph-model-for-all-classification-tasks-21f4a84bdcd5",
+    thumbnail: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*DoAk0zII0lEN8ZOARVVkcA.png", // Replace with your actual thumbnail image
   }
   // Add more talks as needed
 ];
@@ -66,11 +73,11 @@ const LCPosts = [
   <div class="mb-10 text-justify">
     Actively engaged as a member of the DIVE Lab at Texas A&M University, specializing in cutting-edge research at the intersection of Large Language Models (LLMs), Graph Neural Networks (GNN), and Graph Transformers (GT).
     <br><br>
-    Currently, my scholarly pursuits center around unraveling the intricate internal mechanisms of Graph Transformers. My research aims to contribute a comprehensive understanding of how Graph Transformers and Large Language Models interpret and process graph datasets.
+    Currently, my scholarly pursuits center around unraveling the intricate internal mechanisms of Graph Models. My research aims to contribute a comprehensive understanding of how Graph Transformers and Large Language Models interpret and process graph datasets.
     <br><br>
     As part of my master's thesis, I am dedicated to advancing the field and aspire to present my findings at esteemed conferences such as NeurIPS, ICML, and ICLR. My ultimate goal is to contribute valuable insights to the academic community and propel the understanding of these innovative technologies to new heights.
     <br><br>
-    As an active participant in DIVE Lab, I regularly deliver engaging seminars on compelling research papers, sharing insights and fostering intellectual discussions within our lab community. Explore some of my recent presentations below.
+    As an active participant in DIVE Lab, I regularly contribute to insightful discussions on compelling research papers during our collaborative sessions, sharing insights and fostering intellectual discussions within our lab community. Explore some of my recent presentations below.
   </div>
   <div class="container">
     <section>
@@ -108,6 +115,7 @@ const LCPosts = [
             desc={talk.description}
             img={talk.thumbnail}
             url={talk.link}
+            badge="NEW"
           />
         ))}
       </div>
