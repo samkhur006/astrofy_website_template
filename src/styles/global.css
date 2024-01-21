@@ -37,3 +37,7 @@ body {
     width: 28%; /* Ensure the divider spans the full width of its container */
     margin-left: auto;
 }
+/* Global Styles or a relevant stylesheet */
+  .bg-full-page {
+    background: radial-gradient(circle at 0% 0%, transparent 96%, #ffffff 100%); /* Adjust color as needed */
+}
